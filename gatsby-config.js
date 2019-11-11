@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `First Gatsby site`,
+    title: `Vincent's Gatsby site`,
     description: `This is my first time with Gatswby !`,
     author: `Vincent DAGOURY`,
   },
-  plugins: [`gatsby-plugin-sass`]
+  plugins: [`gatsby-plugin-sass`],
 }

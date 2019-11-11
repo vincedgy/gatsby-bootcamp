@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
 const Footer = () => {
   return (
     <footer>
-      <p>Created by Vincent DAGOURY,  (c) 2019</p>
+      <p>Created by Vincent DAGOURY, (c) 2019</p>
     </footer>
   )
 }
