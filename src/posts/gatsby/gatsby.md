@@ -6,8 +6,9 @@ date: 2019/11/12
 
 Let's talk about Gatsby !
 
+![Photo](./gatsby/photo.jpg)
+
 1. Fondation
 2. Code
 3. Debug
 4. Publish
-
