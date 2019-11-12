@@ -5,21 +5,24 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
     "gatsby": "^2.17.11",
+    "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-sass": "^2.1.21",
     "gatsby-plugin-sharp": "^2.2.37",
     "gatsby-remark-images": "^3.1.30",
     "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-source-contentful": "^2.1.56",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-transformer-remark": "^2.6.33",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "env-cmd": "^10.0.1",
     "eslint": "^6.6.0",
-    "eslint-config-react-app": "^5.0.2",
     "eslint-plugin-react": "^7.16.0",
     "prettier": "^1.19.1"
   },
@@ -28,7 +31,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "build": "env-cmd -f .env gatsby build",
     "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",

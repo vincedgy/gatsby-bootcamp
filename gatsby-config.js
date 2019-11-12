@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Vincent's Gatsby site`,
+    title: `Vincent's blog`,
     description: `This is my first time with Gatswby !`,
     author: `Vincent DAGOURY`,
   },
@@ -13,7 +13,15 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
